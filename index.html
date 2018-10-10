@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <meta charset="utf-8">
+    <title>Web Portfolio</title>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-bg">
+      </div>
+      <div class="sidebar-content flex-column">
+        <div class="sidebar-img">
+          <img src="logo.png" alt="..">
+        </div>
+        <div class="sidebar-header">
+          <h2>Jonathan Silkewall</h2>
+          <h3>Front End developer</h3>
+        </div>
+        <div class="sidebar-text-content">
+          <nav class="sidebar-nav">
+            <a href="#aboutme">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <section class="sidebar-social">
+            <h4>Follow or contact</h4>
+            <p>instagram</p>
+          </section>
+        </div>
+      </div>
+    </aside>
+    <div class="container">
+      <section class="main-content" id="aboutme">
+        <h2 style="text-align: center; padding-top:25px; margin:0;">About me</h2>
+        <article  class="inner-main">
+          <h3>Junior Front End:er</h3>
+        <em> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit odio,
+           euismod hendrerit mauris a, posuere accumsan libero. Integer id aliquet ligula.
+            Sed purus velit, vulputate a massa at, sodales lacinia dolor. Nulla facilisi.
+            Proin eget elit non justo consectetur tincidunt.Curabitur elementum enim tortor,
+             vel venenatis enim rhoncus in. Integer sit amet efficitur elit,
+           </em>
+
+           <p>eu laoreet mi. Nam in molestie lectus, nec mattis neque.
+            Phasellus ac neque quis felis vulputate ornare vel ut libero. Aenean pulvinar accumsan diam, a imperdiet
+            justo pretium sagittis. Phasellus varius at tellus ac sodales. Proin pulvinar odio finibus,
+            venenatis erat quis, vehicula erat. Sed elementum a lacus non accumsan. Phasellus eleifend, felis
+            at pretium consectetur, elit tortor tempus sem, eu elementum erat ligula non est. Nulla eget ligula
+            vel nibh molestie fringilla.</p>
+
+
+
+            <div class="skillset">
+              <h3 style="text-align: center;">Mina nivå</h3>
+                <canvas id="skillChart"></canvas>
+            </div>
+        </article>
+      </section>
+      <section class="main-content" id="portfolio">
+        <h2 style="text-align: center; padding-top:50px;">My latest projects</h2>
+        <div class="inner-main flex-columns">
+          <div class="card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1485988412941-77a35537dae4?ixlib=rb-0.3.5&s=177fa5618e070b6d13cf5debd2034426&auto=format&fit=crop&w=1072&q=80" alt="..">
+            </div>
+            <div class="card-content">
+                <h3 class="card-header">Project1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit odio,
+                   euismod hendrerit mauris a, posuere accumsan libero.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=527bc5d7e466efd5ce8a98c311728fbd&auto=format&fit=crop&w=1130&q=80" alt="..">
+            </div>
+            <div class="card-content">
+                <h3 class="card-header">Project2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit odio,
+                   euismod hendrerit mauris a, posuere accumsan libero.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a20bc6324f6ef2969d9a7cae56b8d4d1&auto=format&fit=crop&w=1050&q=80" alt="..">
+            </div>
+            <div class="card-content">
+                <h3 class="card-header">Project3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit odio,
+                   euismod hendrerit mauris a, posuere accumsan libero.</p>
+            </div>
+          </div>
+          <!-- Ankar tag -->
+          <div class="card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1539035104074-dee66086b5e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5729f18a6a6b8ab1b2e2108964227ae5&auto=format&fit=crop&w=1050&q=80 " alt="..">
+            </div>
+            <div class="card-content">
+                <h3 class="card-header">Project4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit odio,
+                   euismod hendrerit mauris a, posuere accumsan libero.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1539075563500-5a6104cea788?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f514b8f5245377b60bc87915cc2feda&auto=format&fit=crop&w=1049&q=80" alt="..">
+            </div>
+            <div class="card-content">
+                <h3 class="card-header">Project5</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit odio,
+                   euismod hendrerit mauris a, posuere accumsan libero.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ae34625b8db390fb2b784800d76d225&auto=format&fit=crop&w=1050&q=80" alt="..">
+            </div>
+            <div class="card-content">
+                <h3 class="card-header">Project5</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit odio,
+                   euismod hendrerit mauris a, posuere accumsan libero.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-content" id="contact">
+        <h2 style="text-align: center; padding-top:25px;">Kontakta mig på</h2>
+        <div class="inner-main">
+          <ul>
+            <li>Instagram</li>
+            <li>LinkedIn</li>
+            <li>Facebook</li>
+            <li>Email</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+    <script src="chart.js"></script>
+
+    </script>
+  </body>
+</html>
