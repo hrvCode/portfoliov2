@@ -10,7 +10,7 @@ var chart = new Chart(ctx, {
             label: "Front end Skill Chart",
             backgroundColor: ['#ffbbbb','#eeb27b','#d7ede2'],
             borderColor: 'rgb(255, 99, 132)',
-            data: [68, 65, 45, 0]
+            data: [70, 65, 50, 0]
         }]
     },
 
@@ -33,4 +33,4 @@ var chart = new Chart(ctx, {
     }
 
 });
-console.log(chart.options)
+console.log(chart)

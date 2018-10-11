@@ -24,7 +24,7 @@ h2{
   top:0;
   bottom:0;
   left:0;
-  height: 100%;
+  height: 100vh;
   width: 25%;
   color: #fff;
 }
@@ -35,6 +35,7 @@ h2{
   bottom:0;
   left:0;
   right:0;
+  min-height: inherit;
   background: rgba(0, 0, 0, 0.7);
 }
 .sidebar-img{
@@ -48,12 +49,15 @@ h2{
   height: 100%;
 }
 .sidebar-header{
+  width: 200px;
+  text-align: center;
+  margin: auto;
   margin-top: 25px;
 }
 .sidebar-header h2, .sidebar-header h3{
   letter-spacing: 1.5px;
   font-size: 1.2em;
-  padding:5px 0;
+  padding: 5px 0;
   margin: 0;
   color:  #ffffff;
 }
@@ -61,15 +65,16 @@ h2{
   font-weight: 100;
 }
 .sidebar-text-content{
-  width: 200px;
+  width: 190px;
+  margin: auto;
 }
 .sidebar-nav{
-  margin: 50px auto;
+  margin: 20px auto;
 }
 
 .sidebar-nav a{
   display: block;
-  padding-top: 12px;
+  padding-top: 9px;
   margin:0;
   width: 100%;
   color: rgba(255,255,255,0.8);
@@ -98,8 +103,13 @@ h2{
   color: #eced9d;
 }
 /*End of link effects*/
-.sidebar-social *{
-  font-weight: 100;
+.sidebar-social{
+  padding-top: 25px;
+  width: 180px;
+  margin: auto;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 /*END SIDENAVBAR*/
 /*MAIN */
@@ -155,4 +165,34 @@ h2{
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: flex-start;
+}
+@media screen and (max-width: 830px){
+  /* SIDEBAR NAVIGATOR HORIZONTAL*/
+  .sidebar-content{
+    flex-direction: row;
+    height: auto;
+  
+  }
+  .sidebar{
+    position: relative;
+    height: 25%;
+    width: 100%;
+    color: #fff;
+  }
+  .sidebar-bg{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .container{
+    position: relative;
+    overflow-y: auto;
+  }
+  .main-content{
+    width: 100%;
+    margin:auto;
+    background: #ffffff;
+    box-shadow: 1px 2px 3px rgba(22,22,22,0.5);
+  }
+
 }
