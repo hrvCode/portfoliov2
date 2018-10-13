@@ -10,7 +10,7 @@ var chart = new Chart(ctx, {
             label: "Front end Skill Chart",
             backgroundColor: ['#ffbbbb','#eeb27b','#d7ede2'],
             borderColor: 'rgb(255, 99, 132)',
-            data: [70, 65, 50, 0]
+            data: [70, 80, 100, 0]
         }]
     },
 

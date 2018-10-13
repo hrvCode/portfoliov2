@@ -5,10 +5,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <meta charset="utf-8">
-    <meta name="viewport" viewport="width=device-width, initial-scale=1">
+     <meta name="viewport" content="width=device-width">
     <title>Web Portfolio</title>
   </head>
-  <body>
+  <body id="start">
+    <div class="m-bg-img">
+    </div>
     <aside class="sidebar">
       <div class="sidebar-bg">
       </div>
@@ -20,24 +22,22 @@
           <h2>Jonathan Silkewall</h2>
           <h3>Front End developer</h3>
         </div>
-        <div class="sidebar-text-content">
-          <nav class="sidebar-nav">
-            <a href="#aboutme">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </div>
+        <nav class="sidebar-nav">
+          <ul>
+
+          </ul>
+        </nav>
         <section class="sidebar-social">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-github"></i>
-            <i class="fab fa-twitter"></i>
+            <a target="_blank" href="https://www.instagram.com/hirvo/"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://github.com/hrvCode"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://se.linkedin.com/in/jonathan-silkewall-6b157616b"><i class="fab fa-linkedin"></i></a>
             <i class="far fa-envelope"></i>
         </section>
       </div>
     </aside>
     <div class="container">
       <section class="main-content" id="aboutme">
-        <h2 style="text-align: center; padding-top:25px; margin:0;">About me</h2>
+        <h2 class="content-header">About me</h2>
         <article  class="inner-main">
           <h3>Junior Front End:er</h3>
         <em> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit odio,
@@ -57,13 +57,13 @@
 
 
             <div class="skillset">
-              <h3 style="text-align: center;">Mina nivå</h3>
+              <h3 style="text-align: center;">How i work</h3>
                 <canvas id="skillChart"></canvas>
             </div>
         </article>
       </section>
       <section class="main-content" id="portfolio">
-        <h2 style="text-align: center; padding-top:50px;">My latest projects</h2>
+        <h2 class="content-header">My latest projects</h2>
         <div class="inner-main flex-columns">
           <div class="card">
             <div class="card-img">
@@ -129,7 +129,7 @@
         </div>
       </section>
       <section class="main-content" id="contact">
-        <h2 style="text-align: center; padding-top:25px;">Kontakta mig på</h2>
+        <h2 class="content-header">Kontakta mig på</h2>
         <div class="inner-main">
           <ul>
             <li>Instagram</li>
@@ -140,9 +140,21 @@
         </div>
       </section>
     </div>
+    <input type="checkbox" id="mobileNavBtn" class="mobileNavBtn">
+    <label id="navigator-btn" for="mobileNavBtn">
+      <a>
+        <span>
+        </span>
+      </a>
+    </label>
+    <div class="mobile-nav">
+        <ul>
+          <li><a href="#aboutme">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
     <script src="script.js"></script>
     <script src="chart.js"></script>
-
-    </script>
   </body>
 </html>
