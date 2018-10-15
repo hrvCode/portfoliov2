@@ -193,6 +193,9 @@ h2{
 #portfolio{
   margin-bottom: 228px;
 } */
+.mobileNavBtn{
+  display:none;
+}
 @media screen and (max-width: 830px){
  :root {
   --mobileBg: #252529;
@@ -297,9 +300,7 @@ h2{
   .sidebar-nav a{
     margin-right: 1em;
   }
-  .mobileNavBtn{
-    display:none;
-  }
+
   /* Fixed Navigator bottom for smaller screens*/
   #navigator-btn{
     display:flex;
