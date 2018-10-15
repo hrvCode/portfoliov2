@@ -6,6 +6,11 @@ body,html{
 *{
   box-sizing: border-box;
   font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+#about-welcome{
+  color: #703030;
+  font-size: 2em;
 }
 .flex-column{
   display: flex;
@@ -15,7 +20,10 @@ body,html{
 }
 h2{
   font-size: 2em;
-  color: #7579AF;
+  color: #38444d;
+}
+canvas{
+  margin-bottom: 25px;
 }
 /* SIDEBAR NAVIGATOR */
 .sidebar{
@@ -101,7 +109,8 @@ h2{
   color: #eced9d;
 }
 .sidebar-social a{
-  color: #ffffff;
+  color: #F2FFF7;
+  font-size: 1.3em;
 }
 /*End of link effects*/
 .sidebar-social{
@@ -138,6 +147,15 @@ h2{
   background: #ffffff;
   box-shadow: 1px 2px 3px rgba(22,22,22,0.5);
 }
+.main-content h3{
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #009688;
+}
+.main-content p{
+  color: #010104;
+}
+
 .main-content:not(:first-child){
   margin-top:50px;
 }
@@ -149,7 +167,8 @@ h2{
 }
 .inner-main{
   height: 100%;
-  padding: 50px 40px 10px 40px;
+  padding: 50px 60px 10px 60px;
+  line-height: 1.7;
 }
 
 /*SKILL */
@@ -165,13 +184,24 @@ h2{
   margin-bottom: 50px;
   height: auto;
 }
+.card-img{
+  width: 100%;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items:baseline;
+    justify-content: flex-start;
+    overflow:hidden;
+}
 .card-img img{
+  z-index: 3;
   width: 100%;
   height: auto;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 .card-content{
+  z-index: 2;
   padding: 8px;
 }
 .flex-columns{
@@ -380,43 +410,7 @@ h2{
   .card{
     width: 100%;
   }
-  /* .sidebar-nav{
-    width: 100%;
-    margin:0;
-    order: 1;
+  .sidebar-nav{
+    display: none;
   }
-  .sidebar-img{
-    margin-top: 50px;
-    order:2;
-  }
-  .sidebar-header{
-    margin: 25px;
-    order:3;
-  }
-  .sidebar-social{
-    order:4;
-  }
-  .sidebar-content{
-    display:flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }  */
-  /*Getting nav to top right*/
-  /* .sidebar-nav ul{
-    display:flex;
-    justify-content: flex-end;
-  }
-  .sidebar-nav ul li{
-    float:left;
-  } */
-  /*Disable old settings*/
-  /* .sidebar-nav a:before,
-  .sidebar-nav a:after{
-    all: unset;
-  }
-  .sidebar-nav a{
-    margin-right: 1em;
-  } */
 }

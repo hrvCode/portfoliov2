@@ -24,14 +24,16 @@
         </div>
         <nav class="sidebar-nav">
           <ul>
-
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <section class="sidebar-social">
-            <a target="_blank" href="https://www.instagram.com/hirvo/"><i class="fab fa-instagram"></i></a>
-            <a target="_blank" href="https://github.com/hrvCode"><i class="fab fa-github"></i></a>
-            <a target="_blank" href="https://se.linkedin.com/in/jonathan-silkewall-6b157616b"><i class="fab fa-linkedin"></i></a>
-            <i class="far fa-envelope"></i>
+            <a target="_blank" title="Instagram" href="https://www.instagram.com/hirvo/"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" title="Github" href="https://github.com/hrvCode"><i class="fab fa-github"></i></a>
+            <a target="_blank" title="LinkedIn" href="https://se.linkedin.com/in/jonathan-silkewall-6b157616b"><i class="fab fa-linkedin"></i></a>
+            <a href="#" title="Get in contact"><i class="far fa-envelope"></i></a>
         </section>
       </div>
     </aside>
@@ -39,60 +41,51 @@
       <section class="main-content" id="aboutme">
         <h2 class="content-header">About me</h2>
         <article  class="inner-main">
-          <h3>Junior Front End:er</h3>
-        <em> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit odio,
-           euismod hendrerit mauris a, posuere accumsan libero. Integer id aliquet ligula.
-            Sed purus velit, vulputate a massa at, sodales lacinia dolor. Nulla facilisi.
-            Proin eget elit non justo consectetur tincidunt.Curabitur elementum enim tortor,
-             vel venenatis enim rhoncus in. Integer sit amet efficitur elit,
-           </em>
-
-           <p>eu laoreet mi. Nam in molestie lectus, nec mattis neque.
-            Phasellus ac neque quis felis vulputate ornare vel ut libero. Aenean pulvinar accumsan diam, a imperdiet
-            justo pretium sagittis. Phasellus varius at tellus ac sodales. Proin pulvinar odio finibus,
-            venenatis erat quis, vehicula erat. Sed elementum a lacus non accumsan. Phasellus eleifend, felis
-            at pretium consectetur, elit tortor tempus sem, eu elementum erat ligula non est. Nulla eget ligula
-            vel nibh molestie fringilla.</p>
-
-
+          <h3 id="about-welcome">Hi</h3>
+           <p>
+             I'm a student at KYH, located in Stockholm, where I study Front-End development.
+             Has previous experience in network engineering, as well as C # programming. I like to work
+             with everything from visual, UX / UI to write code for Back-End. Techniques I study includes UX / UI, React, php, SQL, Node.js and Express as well
+             databases like mySQL & MongoDB. Responsibility and Dry code is something I always strive for.
+           </p>
 
             <div class="skillset">
-              <h3 style="text-align: center;">How i work</h3>
+              <h3 style="text-align: center;">How i like to work</h3>
                 <canvas id="skillChart"></canvas>
             </div>
         </article>
       </section>
       <section class="main-content" id="portfolio">
-        <h2 class="content-header">My latest projects</h2>
+        <h2 class="content-header">Portfolio</h2>
         <div class="inner-main flex-columns">
           <div class="card">
             <div class="card-img">
-              <img src="https://images.unsplash.com/photo-1485988412941-77a35537dae4?ixlib=rb-0.3.5&s=177fa5618e070b6d13cf5debd2034426&auto=format&fit=crop&w=1072&q=80" alt="..">
+              <img src="media/projekt1.jpg" alt="..">
             </div>
             <div class="card-content">
-                <h3 class="card-header">Project1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit odio,
-                   euismod hendrerit mauris a, posuere accumsan libero.</p>
+                <h3 class="card-header">Landing page</h3>
+                <p>This is a mockup, a landing page for a school project which purpose was to reach out
+                  subscribers with a new class subscription. Containing some more basic javascript.</p>
             </div>
           </div>
           <div class="card">
             <div class="card-img">
-              <img src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=527bc5d7e466efd5ce8a98c311728fbd&auto=format&fit=crop&w=1130&q=80" alt="..">
+              <img src="media/projekt2.jpg" alt="..">
             </div>
             <div class="card-content">
-                <h3 class="card-header">Project2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit odio,
-                   euismod hendrerit mauris a, posuere accumsan libero.</p>
+                <h3 class="card-header">Simple E-card page for art</h3>
+                <p>Mockup for a simple E-card website where you could display your art,
+                   blogs, and contact information.</p>
             </div>
           </div>
           <div class="card">
             <div class="card-img">
-              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a20bc6324f6ef2969d9a7cae56b8d4d1&auto=format&fit=crop&w=1050&q=80" alt="..">
+              <img src="media/projekt3.jpg" alt="..">
             </div>
             <div class="card-content">
-                <h3 class="card-header">Project3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit odio,
-                   euismod hendrerit mauris a, posuere accumsan libero.</p>
+                <h3 class="card-header">A design of a portfolio</h3>
+                <p>This portfolio includes some slide-in-content, an javascript made skill bar.
+                This project are also fully responsive.</p>
             </div>
           </div>
           <!-- Ankar tag -->
@@ -119,6 +112,8 @@
           <div class="card">
             <div class="card-img">
               <img src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ae34625b8db390fb2b784800d76d225&auto=format&fit=crop&w=1050&q=80" alt="..">
+              <img src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ae34625b8db390fb2b784800d76d225&auto=format&fit=crop&w=1050&q=80" alt="..">
+              <img src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ae34625b8db390fb2b784800d76d225&auto=format&fit=crop&w=1050&q=80" alt="..">
             </div>
             <div class="card-content">
                 <h3 class="card-header">Project5</h3>
@@ -131,6 +126,11 @@
       <section class="main-content" id="contact">
         <h2 class="content-header">Kontakta mig på</h2>
         <div class="inner-main">
+          <form class="messege" action="#" method="post">
+            <input type="text" name="name" placeholder="Name">
+            <input type="Email" name="email" placeholder="Email">
+            <textarea name="name" rows="8" cols="49"></textarea>
+          </form>
           <ul>
             <li>Instagram</li>
             <li>LinkedIn</li>
@@ -148,11 +148,11 @@
       </a>
     </label>
     <div class="mobile-nav">
-        <ul>
-          <li><a href="#aboutme">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#aboutme">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
     <script src="script.js"></script>
     <script src="chart.js"></script>
