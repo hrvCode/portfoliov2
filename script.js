@@ -11,3 +11,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+
+// Showing rest of Portfolio sites,
+// When hovering over a picture, Height of the current box will increase and more snaps will show.
