@@ -382,7 +382,7 @@ canvas{
     transform: rotate(140deg);
     transition: 0.5s;
     position: relative;
-    top: -1px;
+    top: 0px;
   }
   label.navigator-btn-active .hamburger:after{
     transform: rotate(-140deg);
