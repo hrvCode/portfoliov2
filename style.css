@@ -332,7 +332,7 @@ canvas{
   }
 
   /* Fixed Navigator bottom for smaller screens*/
-  #navigator-btn{
+  .navigator-btn{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -345,35 +345,57 @@ canvas{
     border-radius: 180px;
     background: var(--mobileBg);
   }
-  #navigator-btn:hover{
+  .navigator-btn:hover{
     cursor:pointer;
   }
-  #navigator-btn span,
-  #navigator-btn span:before,
-  #navigator-btn span:after{
+  .navigator-btn span,
+  .navigator-btn span:before,
+  .navigator-btn span:after{
     /* z-index: 999; */
     display: block;
-    height: 3px;
+    height: 2px;
     width: 20px;
     background: white;
+    transition: 0.5s;
   }
-  #navigator-btn span:after,
-  #navigator-btn span:before{
+  .navigator-btn span:after,
+  .navigator-btn span:before{
     position: absolute;
     content: "";
   }
-  #navigator-btn span:after{
+  .navigator-btn span:after{
     top: 13px;
   }
-  #navigator-btn span:before{
+  .navigator-btn span:before{
     bottom: 13px;
+  }
+  /* Navigator button turns activ AKA X*/
+  .hamburger{
+    transition: 0.5s;
+  }
+
+  label.navigator-btn-active .hamburger{
+    background: rgba(0,0,0,0);
+
+  }
+  label.navigator-btn-active .hamburger:before{
+    transform: rotate(140deg);
+    transition: 0.5s;
+    position: relative;
+    top: -1px;
+  }
+  label.navigator-btn-active .hamburger:after{
+    transform: rotate(-140deg);
+    transition: 0.5s;
+    position: relative;
+    top: -2px;
   }
   .mobile-nav{
     z-index: 991;
     position: fixed;
     display:block;
     bottom: 0;
-    height: 52px;
+    height: 55px;
     background: var(--mobileBg);
     width: 100%;
     transform: scale(1,0);
