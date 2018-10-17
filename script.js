@@ -1,4 +1,3 @@
-
 // COPIED CODE FROM
 // https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
 
@@ -19,3 +18,4 @@ let navBtn = document.querySelector(".navigator-btn");
 navBtn.addEventListener("click", function(){
   this.classList.toggle("navigator-btn-active")
 })
+

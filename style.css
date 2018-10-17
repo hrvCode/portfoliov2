@@ -8,11 +8,7 @@ body,html{
   font-size: 17px;
   font-family: 'Poppins', sans-serif;
 }
-hr{
-    border: 0;
-    height: 0.5px;
-    background: rgba(0,0,0,0.2);
-}
+
 .flex-column{
   display: flex;
   flex-flow: column wrap;
@@ -21,6 +17,7 @@ hr{
 }
 canvas{
   margin-bottom: 25px;
+
 }
 
 #about-welcome{
@@ -180,7 +177,7 @@ h2{
   margin:0;
 }
 .inner-main{
-  min-height: 90vh;
+  height: 100%;
   padding: 50px 60px 10px 60px;
   line-height: 1.7;
 }
@@ -203,7 +200,7 @@ h2{
 }
 .card-img{
   width: 100%;
-height: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items:baseline;
@@ -225,15 +222,18 @@ height: auto;
   display:flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 .card a{
   display: block;
-  width: 100%;
+  width: 95%;
+  background: #ececec;
   text-align: center;
-  margin: 0 15px 10px 0;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin: 5px auto;
   text-decoration: none;
-  color: #2196F3;
+  color: #3869b3;
 }
 .card a:hover{
   color: #18619c;
@@ -325,7 +325,7 @@ button:hover{
     width: 100%;
     z-index: -4;
     height: 100%;
-    background-image:url("mbakgrund.jpg");
+    background-image:url('mbakgrund.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -474,6 +474,7 @@ button:hover{
     transition: transform 400ms ease-in-out;
     transform-origin: bottom;
   }
+
   .mobile-nav ul{
     margin:0;
     padding:0;
@@ -502,6 +503,9 @@ button:hover{
   }
 }
 @media screen and (max-width: 600px){
+  .inner-main{
+    padding: 50px 15px 10px 15px;
+  }
   .card{
     width: 100%;
   }
@@ -511,5 +515,8 @@ button:hover{
   input{
     width: 100%;
     min-width: auto;
+  }
+  textarea{
+    width: 100%;
   }
 }
