@@ -166,7 +166,7 @@ h2{
   color: #009688;
 }
 .main-content p{
-  color: #010104;
+  color: #757575;
 }
 .main-content:nth-child(even){
   background: #f3f3f3;
@@ -189,6 +189,44 @@ h2{
   margin: auto;
 }
 
+.flex-table{
+  width: 70%;
+  height: 50%;
+  margin: auto;
+  margin-top: 80px;
+}
+.row *{
+  padding:0;
+  margin:0;
+}
+.row p{
+  margin-left: 5px;
+
+}
+.row .codebar{
+  height: 25px;
+  text-align: right;
+  border-radius: 5px;
+  opacity:0;
+  transform: rotate();
+  transition: all 1s ease-in-out;
+}
+
+.row .codebar *{
+  margin-right: 5px;
+}
+.html-column{
+  background: #ffbbbb;
+  width: 10%;
+}
+.css-column{
+  background: #eeb27b;
+  width: 10%;
+}
+.js-column{
+  background: #d7ede2;
+  width: 10%;
+}
 /*STYLING PORTFOLIO*/
 .card{
   width: 30%;
@@ -261,6 +299,7 @@ textarea{
 }
 input{
   display: block;
+  padding-left: 5px;
   width: 40%;
   font-size: 19px;
   height: 35px;
@@ -505,6 +544,9 @@ button:hover{
 @media screen and (max-width: 600px){
   .inner-main{
     padding: 50px 15px 10px 15px;
+  }
+  .flex-table{
+    width: 90%;
   }
   .card{
     width: 100%;
