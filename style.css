@@ -469,6 +469,7 @@ button:hover{
     background: white;
     transition: 0.5s;
   }
+
   .navigator-btn span:after,
   .navigator-btn span:before{
     position: absolute;
@@ -487,7 +488,6 @@ button:hover{
 
   label.navigator-btn-active .hamburger{
     background: rgba(0,0,0,0);
-
   }
   label.navigator-btn-active .hamburger:before{
     transform: rotate(140deg);
