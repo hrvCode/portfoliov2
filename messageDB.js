@@ -28,12 +28,16 @@ function addMessage(name, email, textMessage){
   resetInput();
   messageDB.push(messageobj);
 }
+
+// reset orm inputs.
 function resetInput(){
   inputName.value = "";
   inputEmail.value = "";
   inputMessage.value = "";
   console.log("thx for message")
 }
+
+//extra validate
 function validateMessage(){
 // incase
 }
