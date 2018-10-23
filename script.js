@@ -11,7 +11,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
 // Showing rest of Portfolio sites,
 // When hovering over a picture, Height of the current box will increase and more snaps will show.
 let navBtn = document.querySelector(".navigator-btn");
@@ -33,21 +32,17 @@ const skills = [{
   }
 ]
 
-
 function codeTable(num){
 let width = document.querySelectorAll('.codebar span');
 let codebars = document.querySelectorAll('.codebar');
   skills.forEach((skill, index)=>{
-    console.log(index)
     width[index].textContent = skill.name;
     codebars[index].style.width = skill.wdt;
     codebars[index].style.opacity = num;
-    console.log(codebars[index])
   })
 }
 
 var flexTable = document.querySelector('.flex-table');
-
 
 window.onload = () => {
     fireScript(codeTable, checkDistance(flexTable));
@@ -57,13 +52,11 @@ window.onscroll = () =>{
 }
 // fire script tages a function to fire and the distance to top
 function fireScript(func, distance){
-  if(distance < 400 && distance > -100){
+  if(distance < 500 && distance > -200){
     func(1);
   }else{
     func(0);
   }
-  console.log(func)
-  console.log(distance)
 }
 // get distance to top of element
 function checkDistance(element){

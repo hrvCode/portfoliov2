@@ -27,7 +27,7 @@ canvas{
 h2{
   font-size: 2em;
   letter-spacing: 2px;
-  color: #544f5e;
+  color: #7b728d;
 }
 /* SIDEBAR NAVIGATOR */
 .sidebar{
@@ -315,6 +315,7 @@ input{
 }
 button{
   display: block;
+  align-self: flex-start;
   box-shadow: 0 0 1px  black;
   border:none;
   margin: 5px 0;
@@ -348,6 +349,17 @@ button:hover{
 .contact-social a:hover{
   color: #252525;
 }
+#honeypot {
+  display: none; /*makes the field not visible to humans*/
+}
+#thankyou_message{
+  display: block;
+  text-align: center;
+}
+#thankyou_message h2{
+  color: #2196f3;
+  font-size: 1em;
+}
 @media screen and (max-width: 1100px){
   .card{
     width: 45%;
@@ -379,10 +391,6 @@ button:hover{
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
   }
-  /* .sidebar-nav ul{
-    height: 100%;
-    width: 100%;
-  } */
   /* Main content sections*/
   .container{
     position: relative;
@@ -436,7 +444,7 @@ button:hover{
   /*Disable old settings*/
   .sidebar-nav a:before,
   .sidebar-nav a:after{
-    all: unset;
+    fill: unset;
   }
   .sidebar-nav a{
     margin-right: 1em;
@@ -462,7 +470,6 @@ button:hover{
   .navigator-btn span,
   .navigator-btn span:before,
   .navigator-btn span:after{
-    /* z-index: 999; */
     display: block;
     height: 2px;
     width: 20px;
@@ -540,7 +547,8 @@ button:hover{
     opacity: 1;
     transition: opacity 350ms ease-in-out 250ms;
   }
-}
+
+
 @media screen and (max-width: 600px){
   .inner-main{
     padding: 50px 15px 10px 15px;

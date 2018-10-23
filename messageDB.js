@@ -5,10 +5,10 @@ let msgBtn = document.querySelector('button');
 // message db;
 let messageDB = [];
 
-msgBtn.addEventListener("click",() => {;
-  console.log(inputName.value + " " + inputEmail.value + " " + inputMessage.value);
-  addMessage(inputName.value, inputEmail.value, inputMessage.value);
-});
+// msgBtn.addEventListener("click",() => {;
+//   console.log(inputName.value + " " + inputEmail.value + " " + inputMessage.value);
+//   addMessage(inputName.value, inputEmail.value, inputMessage.value);
+// });
 
 // factory Pattern for message creating;
 function addMessage(name, email, textMessage){

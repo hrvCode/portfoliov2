@@ -30,12 +30,12 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <div class="sidebar-social">
+        <aside class="sidebar-social">
             <a target="_blank" title="Instagram" href="https://www.instagram.com/hirvo/"><i class="fab fa-instagram"></i></a>
             <a target="_blank" title="Github" href="https://github.com/hrvCode"><i class="fab fa-github"></i></a>
             <a target="_blank" title="LinkedIn" href="https://se.linkedin.com/in/jonathan-silkewall-6b157616b"><i class="fab fa-linkedin"></i></a>
-            <a href="#" title="Get in contact"><i class="far fa-envelope"></i></a>
-        </div>
+            <a href="#contact" title="Get in contact"><i class="far fa-envelope"></i></a>
+        </aside>
       </div>
     </aside>
     <div class="container">
@@ -46,14 +46,8 @@
              <span id="about-welcome"> Hi!</span> I'm a student at KYH, located in Stockholm,
               where I study Front-End development. I enjoy to work with everything from visual,
                UX / UI to write code for Back-End. Techniques I'm studying includes UX / UI, React,
-                php, SQL, Node.js and Express as well databases like mySQL & MongoDB. Responsibility
-                 and Dry code is something I always strive for.
+                php, SQL, Node.js and Express as well databases like mySQL & MongoDB.
            </p>
-
-            <!-- <div class="skillset">
-              <h3 style="text-align: center;">How i like to work</h3>
-                <canvas id="skillChart"></canvas>
-            </div> -->
             <div class="flex-table">
               <div class="row">
                 <p>html</p>
@@ -74,19 +68,12 @@
                 </div>
               </div>
             </div>
-<<<<<<< HEAD
-
-
-
-        </article>
-=======
         </div>
->>>>>>> 17da1aba52558504759c41b0948bf589a9644e91
       </section>
       <section class="main-content" id="portfolio">
         <h2 class="content-header">Portfolio</h2>
         <div class="inner-main flex-columns">
-          <div class="card">
+          <article class="card">
             <div class="card-img">
               <img src="media/projekt1.jpg" alt="..">
             </div>
@@ -95,8 +82,8 @@
                 <p>This is a mockup, a landing page for a school project which purpose was to reach out .......</p>
                   <a href="#">Read more</a>
             </div>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <div class="card-img">
               <img src="media/projekt2.jpg" alt="..">
             </div>
@@ -106,8 +93,8 @@
                    blogs, and contact .......</p>
                  <a href="#">Read more</a>
             </div>
-          </div>
-          <div class="card">
+          </article>
+          <article class="card">
             <div class="card-img">
               <img src="media/projekt3.jpg" alt="..">
             </div>
@@ -116,28 +103,37 @@
                 <p>This portfolio includes some slide-in-content, javascript made skillbar .......</p>
                   <a href="#">Read more</a>
             </div>
-          </div>
+          </article>
         </div>
       </section>
       <section class="main-content" id="contact">
         <div class="inner-main flex-column">
           <h2 class="content-header">Contact me</h2>
-          <form class="messege" action="#" method="post">
-            <div class="form-group">
-              <input type="text" required="required" name="name" placeholder="Name">
-              <input type="Email" required="required" name="email" placeholder="Email">
+          <form class="gform flex-column" action="https://script.google.com/macros/s/AKfycbwjcB4wyjFxKJgHyc8lD_MUiA4u7LW7AxHufAJJmQ/exec" method="post">
+            <div id="thankyou_message" style="display:none;">
+              <h2>Thank you<br> for connecting with me</h2>
             </div>
-            <textarea name="name" required rows="8" cols="49"></textarea>
-              <button type="button" name="button">send</button>
+            <div class="form-group">
+              <!--input id must be honeypot or else it wont work-->
+              <label class="sr-only">Keep this field blank</label>
+              <input id="honeypot" type="text" name="honeypot" value="" />
+              <!--the rest of your form-->
+              <div >
+                <input type="text" required="required" name="name" placeholder="Name">
+                <input type="email" required="required" name="email" placeholder="Email">
+              </div>
+              <textarea name="message" required rows="8" cols="49"></textarea>
+                <button type="submit" name="button">send</button>
+              </div>
           </form>
-          <div class="contact-social">
+          <aside class="contact-social">
             <ul class="sidebar-social">
               <li><a target="_blank" title="Instagram" href="https://www.instagram.com/hirvo/"><i class="fab fa-instagram"></i></a></li>
               <li><a target="_blank" title="Github" href="https://github.com/hrvCode"><i class="fab fa-github"></i></a></li>
               <li><a target="_blank" title="LinkedIn" href="https://se.linkedin.com/in/jonathan-silkewall-6b157616b"><i class="fab fa-linkedin"></i></a></li>
               <li><a href="#" title="Get in contact"><i class="far fa-envelope"></i></a></li>
             </ul>
-          </div>
+          </aside>
         </div>
       </section>
     </div>
@@ -156,7 +152,6 @@
       </ul>
     </div>
     <script src="script.js"></script>
-    <script src="chart.js"></script>
-    <script src="messageDB.js"></script>
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
   </body>
 </html>
