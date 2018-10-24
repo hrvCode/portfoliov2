@@ -20,7 +20,7 @@ canvas{
 
 }
 
-#about-welcome{
+#aboutme-anchor{
   color: #00a867;
   font-size: 1.5em;
 }
@@ -329,6 +329,9 @@ button{
 button:hover{
   background: #52b3ff;
 }
+button:focus{
+	background: #52b3ff;
+}
 .inner-main ul {
   overflow: hidden;
   margin: 0;
@@ -535,7 +538,7 @@ button:hover{
     text-decoration: none;
     color: white;
     font-size: 16px;
-    padding: 15px;
+    padding: 15px 25px;
     width: 100%;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
@@ -550,6 +553,9 @@ button:hover{
 
 
 @media screen and (max-width: 600px){
+  p{
+    font-size: 18px;
+  }
   .inner-main{
     padding: 50px 15px 10px 15px;
   }

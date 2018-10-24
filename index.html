@@ -12,12 +12,12 @@
   <body id="start">
     <div class="m-bg-img">
     </div>
-    <aside class="sidebar">
+    <header class="sidebar">
       <div class="sidebar-bg">
       </div>
       <div class="sidebar-content flex-column">
         <div class="sidebar-img">
-          <img src="logo.png" alt="..">
+          <img style="background: white;" src="portrait.svg" alt="..">
         </div>
         <div class="sidebar-header">
           <h2>Jonathan Silkewall</h2>
@@ -37,13 +37,13 @@
             <a href="#contact" title="Get in contact"><i class="far fa-envelope"></i></a>
         </aside>
       </div>
-    </aside>
+    </header>
     <div class="container">
-      <section class="main-content" id="aboutme">
+      <section class="main-content">
         <div  class="inner-main">
             <h2 class="content-header">About me</h2>
            <p>
-             <span id="about-welcome"> Hi!</span> I'm a student at KYH, located in Stockholm,
+             <span id="aboutme-anchor"> Hi!</span> I'm a student at KYH, located in Stockholm,
               where I study Front-End development. I enjoy to work with everything from visual,
                UX / UI to write code for Back-End. Techniques I'm studying includes UX / UI, React,
                 php, SQL, Node.js and Express as well databases like mySQL & MongoDB.
@@ -73,7 +73,7 @@
       <section class="main-content" id="portfolio">
         <h2 class="content-header">Portfolio</h2>
         <div class="inner-main flex-columns">
-          <article class="card">
+          <div class="card">
             <div class="card-img">
               <img src="media/projekt1.jpg" alt="..">
             </div>
@@ -82,8 +82,8 @@
                 <p>This is a mockup, a landing page for a school project which purpose was to reach out .......</p>
                   <a href="#">Read more</a>
             </div>
-          </article>
-          <article class="card">
+          </div>
+          <div class="card">
             <div class="card-img">
               <img src="media/projekt2.jpg" alt="..">
             </div>
@@ -93,8 +93,8 @@
                    blogs, and contact .......</p>
                  <a href="#">Read more</a>
             </div>
-          </article>
-          <article class="card">
+          </div>
+          <div class="card">
             <div class="card-img">
               <img src="media/projekt3.jpg" alt="..">
             </div>
@@ -103,7 +103,7 @@
                 <p>This portfolio includes some slide-in-content, javascript made skillbar .......</p>
                   <a href="#">Read more</a>
             </div>
-          </article>
+          </div>
         </div>
       </section>
       <section class="main-content" id="contact">
