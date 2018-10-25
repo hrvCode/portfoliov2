@@ -9,25 +9,14 @@ body,html{
   font-family: 'Poppins', sans-serif;
 }
 
-.flex-column{
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-}
-canvas{
-  margin-bottom: 25px;
-
-}
-
-#about-welcome{
+#aboutme-anchor{
   color: #00a867;
   font-size: 1.5em;
 }
 h2{
   font-size: 2em;
   letter-spacing: 2px;
-  color: #544f5e;
+  color: #7b728d;
 }
 /* SIDEBAR NAVIGATOR */
 .sidebar{
@@ -65,10 +54,10 @@ h2{
   width: 220px;
   text-align: center;
 }
-.sidebar-header h2, .sidebar-header h3{
+.sidebar-header h1, .sidebar-header h3{
   font-family: 'Charmonman', cursive;
   letter-spacing: 1.5px;
-  font-size: 1.2em;
+  font-size: 1.3em;
   padding: 5px 0;
   margin: 0;
   color:  #ffffff;
@@ -166,7 +155,7 @@ h2{
   color: #009688;
 }
 .main-content p{
-  color: #010104;
+  color: #757575;
 }
 .main-content:nth-child(even){
   background: #f3f3f3;
@@ -189,6 +178,44 @@ h2{
   margin: auto;
 }
 
+.flex-table{
+  width: 70%;
+  height: 50%;
+  margin: auto;
+  margin-top: 80px;
+}
+.row *{
+  padding:0;
+  margin:0;
+}
+.row p{
+  margin-left: 5px;
+
+}
+.row .codebar{
+  height: 25px;
+  text-align: right;
+  border-radius: 5px;
+  opacity:0;
+  transform: rotate();
+  transition: all 1s ease-in-out;
+}
+
+.row .codebar *{
+  margin-right: 5px;
+}
+.html-column{
+  background: #ffbbbb;
+  width: 10%;
+}
+.css-column{
+  background: #eeb27b;
+  width: 10%;
+}
+.js-column{
+  background: #d7ede2;
+  width: 10%;
+}
 /*STYLING PORTFOLIO*/
 .card{
   width: 30%;
@@ -218,11 +245,19 @@ h2{
   z-index: 2;
   padding: 8px;
 }
+.card-text{
+  height: 120px;
+}
 .flex-columns{
+  display:flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-rows{
   display:flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
 }
 .card a{
   display: block;
@@ -251,7 +286,7 @@ h2{
 /*contact form styling*/
 textarea{
   resize: vertical;
-  max-width: 700px;
+  width: 100%;
   margin: 5px 0;
   max-width: 400px;
   border:none;
@@ -261,6 +296,7 @@ textarea{
 }
 input{
   display: block;
+  padding-left: 5px;
   width: 40%;
   font-size: 19px;
   height: 35px;
@@ -276,6 +312,7 @@ input{
 }
 button{
   display: block;
+  align-self: flex-start;
   box-shadow: 0 0 1px  black;
   border:none;
   margin: 5px 0;
@@ -288,6 +325,9 @@ button{
 }
 button:hover{
   background: #52b3ff;
+}
+button:focus{
+	background: #52b3ff;
 }
 .inner-main ul {
   overflow: hidden;
@@ -308,6 +348,17 @@ button:hover{
 }
 .contact-social a:hover{
   color: #252525;
+}
+#honeypot {
+  display: none; /*makes the field not visible to humans*/
+}
+#thankyou_message{
+  display: block;
+  text-align: center;
+}
+#thankyou_message h2{
+  color: #2196f3;
+  font-size: 1em;
 }
 @media screen and (max-width: 1100px){
   .card{
@@ -340,10 +391,6 @@ button:hover{
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
   }
-  /* .sidebar-nav ul{
-    height: 100%;
-    width: 100%;
-  } */
   /* Main content sections*/
   .container{
     position: relative;
@@ -397,7 +444,7 @@ button:hover{
   /*Disable old settings*/
   .sidebar-nav a:before,
   .sidebar-nav a:after{
-    all: unset;
+    fill: unset;
   }
   .sidebar-nav a{
     margin-right: 1em;
@@ -423,7 +470,6 @@ button:hover{
   .navigator-btn span,
   .navigator-btn span:before,
   .navigator-btn span:after{
-    /* z-index: 999; */
     display: block;
     height: 2px;
     width: 20px;
@@ -489,7 +535,7 @@ button:hover{
     text-decoration: none;
     color: white;
     font-size: 16px;
-    padding: 15px;
+    padding: 15px 25px;
     width: 100%;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
@@ -501,10 +547,17 @@ button:hover{
     opacity: 1;
     transition: opacity 350ms ease-in-out 250ms;
   }
-}
+
+
 @media screen and (max-width: 600px){
+  p{
+    font-size: 18px;
+  }
   .inner-main{
     padding: 50px 15px 10px 15px;
+  }
+  .flex-table{
+    width: 90%;
   }
   .card{
     width: 100%;

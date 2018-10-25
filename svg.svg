@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273.891 262.766">
+  <defs>
+    <style>
+      .cls-1, .cls-4, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-7 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #707070;
+      }
+
+      .cls-3 {
+        fill: #9befff;
+      }
+
+      .cls-6, .cls-8 {
+        stroke: none;
+      }
+
+      .cls-8 {
+        fill: #707070;
+      }
+    </style>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(-606 -210)">
+    <ellipse id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="136.945" cy="131.383" rx="136.945" ry="131.383" transform="translate(606 210)"/>
+    <line id="Line_1" data-name="Line 1" class="cls-2" x2="28.608" y2="64.632" transform="translate(677.254 312.51)"/>
+    <path id="Path_4" data-name="Path 4" class="cls-2" d="M745.891,27.749" transform="translate(-43.001 189.005)"/>
+    <g id="Group_1-2" data-name="Group 1" transform="translate(606 210)">
+      <path id="Path_1" data-name="Path 1" class="cls-3" d="M619.329,530.614s67.183-57.911,56.942-.123,61.08,0,60.349,0,65.469-61.446,59.251,0,32.915,25.971,58.885,0,27.935-5.306,27.935-5.306" transform="translate(-613.327 -361.637)"/>
+      <line id="Line_2" data-name="Line 2" class="cls-2" x1="20.661" y2="57.745" transform="translate(183.035 102.51)"/>
+      <path id="Path_3" data-name="Path 3" class="cls-4" d="M761.5,374.766s31.09-52.742,71.633-50.317c18.9,1.131,39.86,14.256,60.68,50.317" transform="translate(-690.246 -272.256)"/>
+      <g id="Ellipse_1-2" data-name="Ellipse 1" class="cls-2" transform="translate(0)">
+        <ellipse class="cls-6" cx="136.945" cy="131.383" rx="136.945" ry="131.383"/>
+        <ellipse class="cls-7" cx="136.945" cy="131.383" rx="136.445" ry="130.883"/>
+      </g>
+      <g id="Ellipse_2" data-name="Ellipse 2" class="cls-4" transform="translate(102.245 88.471)">
+        <ellipse class="cls-6" cx="3.708" cy="6.092" rx="3.708" ry="6.092"/>
+        <ellipse class="cls-7" cx="3.708" cy="6.092" rx="3.208" ry="5.592"/>
+      </g>
+      <g id="Path_5" data-name="Path 5" class="cls-5" transform="translate(103.365 115.49)">
+        <path class="cls-6" d="M 1.774633646011353 17.37393188476563 L 0.5000028610229492 15.72255992889404 L 0.5000028610229492 0.5000047087669373 L 3.208382844924927 0.5000047087669373 L 3.208382844924927 15.70758152008057 L 1.774633646011353 17.37393188476563 Z"/>
+        <path class="cls-8" d="M 1.000002861022949 0.9999942779541016 L 1.000002861022949 15.55203437805176 L 1.795669198036194 16.58287048339844 L 2.708382844924927 15.5220890045166 L 2.708382844924927 0.9999942779541016 L 1.000002861022949 0.9999942779541016 M 2.86102294921875e-06 -5.7220458984375e-06 L 3.708382844924927 -5.7220458984375e-06 L 3.708382844924927 15.89308452606201 L 1.753602862358093 18.16498565673828 L 2.86102294921875e-06 15.89308452606201 L 2.86102294921875e-06 -5.7220458984375e-06 Z"/>
+      </g>
+      <path id="Path_7" data-name="Path 7" class="cls-2" d="M743.972,253.268s9.238,12.788,22.026,0" transform="translate(-649.628 -127.571)"/>
+      <path id="Path_8" data-name="Path 8" class="cls-2" d="M743.972,253.268s5.4,6.792,13.8,3.812a18.4,18.4,0,0,0,5.938-3.812" transform="translate(-648.569 -127.571)"/>
+      <g id="Ellipse_3" data-name="Ellipse 3" class="cls-4" transform="translate(164.758 88.471)">
+        <ellipse class="cls-6" cx="3.708" cy="6.092" rx="3.708" ry="6.092"/>
+        <ellipse class="cls-7" cx="3.708" cy="6.092" rx="3.208" ry="5.592"/>
+      </g>
+      <path id="Path_9" data-name="Path 9" class="cls-2" d="M0,86.605A834.868,834.868,0,0,1,5.125,0" transform="matrix(0.998, -0.07, 0.07, 0.998, 131.642, 70.004)"/>
+      <line id="Line_7" data-name="Line 7" class="cls-2" y1="22.25" x2="13.774" transform="translate(110.987 38.938)"/>
+      <line id="Line_8" data-name="Line 8" class="cls-2" x1="15.363" y1="22.25" transform="translate(153.368 38.938)"/>
+      <path id="Path_10" data-name="Path 10" class="cls-2" d="M827.239,85.064a28.3,28.3,0,0,0-28.46,0" transform="translate(-673.87 -46.126)"/>
+    </g>
+    <path id="Path_11" data-name="Path 11" class="cls-2" d="M0,0V21.419" transform="translate(711.5 304.5)"/>
+  </g>
+</svg>

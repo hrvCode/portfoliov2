@@ -6,21 +6,21 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width">
-    <title>Web Portfolio</title>
+    <meta name="viewport" content="width=device-width">
+    <title>Jonathan S | Front-End</title>
   </head>
-  <body id="start">
-    <div class="m-bg-img">
-    </div>
-    <aside class="sidebar">
+  <body>
+    <header class="sidebar">
+      <div class="m-bg-img">
+      </div>
       <div class="sidebar-bg">
       </div>
-      <div class="sidebar-content flex-column">
+      <div class="sidebar-content flex-columns">
         <div class="sidebar-img">
-          <img src="logo.png" alt="..">
+          <img style="background: white;" src="portrait.svg" alt="a sketched potrait of me">
         </div>
         <div class="sidebar-header">
-          <h2>Jonathan Silkewall</h2>
+          <h1>Jonathan Silkewall</h1>
           <h3>Front-End developer</h3>
         </div>
         <nav class="sidebar-nav">
@@ -30,87 +30,110 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <div class="sidebar-social">
-            <a target="_blank" title="Instagram" href="https://www.instagram.com/hirvo/"><i class="fab fa-instagram"></i></a>
+        <aside class="sidebar-social">
+            <a target="_blank" aria-label="Link to instagram" title="Instagram" href="https://www.instagram.com/hirvo/"><i class="fab fa-instagram"></i></a>
             <a target="_blank" title="Github" href="https://github.com/hrvCode"><i class="fab fa-github"></i></a>
             <a target="_blank" title="LinkedIn" href="https://se.linkedin.com/in/jonathan-silkewall-6b157616b"><i class="fab fa-linkedin"></i></a>
-            <a href="#" title="Get in contact"><i class="far fa-envelope"></i></a>
-        </div>
+            <a href="#contact" title="Get in contact"><i class="far fa-envelope"></i></a>
+        </aside>
       </div>
-    </aside>
+    </header>
     <div class="container">
-      <section class="main-content" id="aboutme">
+      <section class="main-content">
         <div  class="inner-main">
             <h2 class="content-header">About me</h2>
            <p>
-             <span id="about-welcome"> Hi!</span> I'm a student at KYH, located in Stockholm,
+             <span id="aboutme-anchor"> Hi!</span> I'm a student at KYH, located in Stockholm,
               where I study Front-End development. I enjoy to work with everything from visual,
                UX / UI to write code for Back-End. Techniques I'm studying includes UX / UI, React,
-                php, SQL, Node.js and Express as well databases like mySQL & MongoDB. Responsibility
-                 and Dry code is something I always strive for.
+                php, SQL, Node.js and Express as well databases like mySQL & MongoDB.
            </p>
-
-            <div class="skillset">
-              <h3 style="text-align: center;">How i like to work</h3>
-                <canvas id="skillChart"></canvas>
+            <div class="flex-table">
+              <div class="row">
+                <p>html</p>
+                <div class="html-column codebar">
+                  <span></span>
+                </div>
+              </div>
+              <div class="row">
+                <p>css</p>
+                <div class="css-column  codebar">
+                  <span></span>
+                </div>
+              </div>
+              <div class="row">
+                <p>javascript</p>
+                <div class="js-column  codebar">
+                  <span></span>
+                </div>
+              </div>
             </div>
         </div>
       </section>
       <section class="main-content" id="portfolio">
         <h2 class="content-header">Portfolio</h2>
-        <div class="inner-main flex-columns">
+        <div class="inner-main flex-rows">
           <div class="card">
             <div class="card-img">
-              <img src="media/projekt1.jpg" alt="..">
+              <img src="media/projekt1.jpg" alt="picture of a website project">
             </div>
             <div class="card-content">
                 <h3 class="card-header">Landing page</h3>
-                <p>This is a mockup, a landing page for a school project which purpose was to reach out .......</p>
-                  <a href="#">Read more</a>
+                <p class="card-text">This is a mockup, a landing page for a school project which purpose was to reach out .......</p>
+                <a href="#">Read more</a>
             </div>
           </div>
           <div class="card">
             <div class="card-img">
-              <img src="media/projekt2.jpg" alt="..">
+              <img src="media/projekt2.jpg" alt="picture of a website project">
             </div>
             <div class="card-content">
                 <h3 class="card-header">Simple E-card page for art</h3>
-                <p>Mockup for a simple E-card website where you could display your art,
+                <p class="card-text">Mockup for a simple E-card website where you could display your art,
                    blogs, and contact .......</p>
-                 <a href="#">Read more</a>
+                <a href="#">Read more</a>
             </div>
           </div>
           <div class="card">
             <div class="card-img">
-              <img src="media/projekt3.jpg" alt="..">
+              <img src="media/projekt3.jpg" alt="picture of a website project">
             </div>
             <div class="card-content">
                 <h3 class="card-header">A design of a portfolio</h3>
-                <p>This portfolio includes some slide-in-content, javascript made skillbar .......</p>
-                  <a href="#">Read more</a>
+                <p class="card-text">This portfolio includes some slide-in-content, javascript made skillbar .......</p>
+                <a href="#">Read more</a>
             </div>
           </div>
         </div>
       </section>
       <section class="main-content" id="contact">
-        <div class="inner-main flex-column">
+        <div class="inner-main flex-columns">
           <h2 class="content-header">Contact me</h2>
-          <form class="messege" action="#" method="post">
-            <div class="form-group">
-              <input type="text" required="required" name="name" placeholder="Name">
-              <input type="Email" required="required" name="email" placeholder="Email">
+          <form class="gform flex-column" action="https://script.google.com/macros/s/AKfycbwjcB4wyjFxKJgHyc8lD_MUiA4u7LW7AxHufAJJmQ/exec" method="post">
+            <div id="thankyou_message" style="display:none;">
+              <h2>Thank you<br> for connecting with me</h2>
             </div>
-            <textarea name="name" required rows="8" cols="49"></textarea>
-              <button type="button" name="button">send</button>
+            <div class="form-group">
+              <!--input id must be honeypot or else it wont work-->
+              <label class="sr-only">Keep this field blank</label>
+              <input id="honeypot" type="text" name="honeypot" value="" />
+              <!--the rest of your form-->
+              <div >
+                <input type="text" required="required" name="name" placeholder="Name">
+                <input type="email" required="required" name="email" placeholder="Email">
+              </div>
+              <textarea name="message" required rows="8" cols="49"></textarea>
+                <button type="submit" name="button">send</button>
+              </div>
           </form>
-          <div class="contact-social">
+          <aside class="contact-social">
             <ul class="sidebar-social">
               <li><a target="_blank" title="Instagram" href="https://www.instagram.com/hirvo/"><i class="fab fa-instagram"></i></a></li>
               <li><a target="_blank" title="Github" href="https://github.com/hrvCode"><i class="fab fa-github"></i></a></li>
               <li><a target="_blank" title="LinkedIn" href="https://se.linkedin.com/in/jonathan-silkewall-6b157616b"><i class="fab fa-linkedin"></i></a></li>
               <li><a href="#" title="Get in contact"><i class="far fa-envelope"></i></a></li>
             </ul>
-          </div>
+          </aside>
         </div>
       </section>
     </div>
@@ -129,7 +152,6 @@
       </ul>
     </div>
     <script src="script.js"></script>
-    <script src="chart.js"></script>
-    <script src="messageDB.js"></script>
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
   </body>
 </html>
