@@ -4,15 +4,13 @@ body,html{
   min-height: 100%;
 }
 *{
+  padding:0;
+  margin:0;
   box-sizing: border-box;
   font-size: 17px;
   font-family: 'Poppins', sans-serif;
 }
 
-#aboutme-anchor{
-  color: #00a867;
-  font-size: 1.5em;
-}
 h2{
   font-size: 2em;
   letter-spacing: 2px;
@@ -77,11 +75,11 @@ h2{
 }
 .sidebar-nav a{
   display: block;
-  padding-top: 9px;
+  padding-top: 25px;
   margin:0;
   width: 100%;
   color: rgba(255,255,255,0.8);
-  font-size: 16px;
+  font-size: 17px;
   text-decoration: none;
 }
 /*Link effects*/
@@ -162,7 +160,7 @@ h2{
 }
 .content-header{
   text-align: center;
-  padding-top:25px;
+  padding: 25px 0;
   margin:0;
 }
 .inner-main{
@@ -170,7 +168,10 @@ h2{
   padding: 50px 60px 10px 60px;
   line-height: 1.7;
 }
-
+.first-word{
+  color: #00a867;
+  font-size: 1.5em;
+}
 /*SKILL */
 .skillset{
   width: 60%;
@@ -197,7 +198,7 @@ h2{
   text-align: right;
   border-radius: 5px;
   opacity:0;
-  transform: rotate();
+  color: #555555;
   transition: all 1s ease-in-out;
 }
 
@@ -444,7 +445,7 @@ button:focus{
   /*Disable old settings*/
   .sidebar-nav a:before,
   .sidebar-nav a:after{
-    fill: unset;
+    margin:0;
   }
   .sidebar-nav a{
     margin-right: 1em;
