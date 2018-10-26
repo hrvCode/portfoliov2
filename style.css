@@ -8,9 +8,8 @@ body,html{
   margin:0;
   box-sizing: border-box;
   font-size: 17px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'open serif', sans-serif;
 }
-
 h2{
   font-size: 2em;
   letter-spacing: 2px;
@@ -119,6 +118,7 @@ h2{
 .sidebar-social a:hover{
   color: #eced9d;
 }
+
 /*END SIDENAVBAR*/
 
 
@@ -160,13 +160,17 @@ h2{
 }
 .content-header{
   text-align: center;
-  padding: 25px 0;
+  padding: 10px 0;
   margin:0;
 }
 .inner-main{
   height: 100%;
   padding: 50px 60px 10px 60px;
   line-height: 1.7;
+}
+div.aboutme{
+  max-width: 600px;
+  margin: auto;
 }
 .first-word{
   color: #00a867;
@@ -221,7 +225,7 @@ h2{
 .card{
   width: 30%;
   margin-bottom: 50px;
-  height: auto;
+  height: 100%;
   background: #fff;
   box-shadow: 2px 3px 10px rgba(0,0,0,0.2);
   border-radius: 15px;
@@ -258,6 +262,9 @@ h2{
 .flex-rows{
   display:flex;
   flex-flow: row wrap;
+  min-height: 600px;
+  margin-top: 25px;
+  align-content: center;
   justify-content: space-between;
 }
 .card a{
@@ -282,7 +289,12 @@ h2{
 .mobileNavBtn{
   display:none;
 }
-
+#contact{
+  background-image: url('bg-contact.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 /*contact form styling*/
 textarea{
@@ -330,25 +342,35 @@ button:hover{
 button:focus{
 	background: #52b3ff;
 }
-.inner-main ul {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.main-footer{
+  position: relative;
+  bottom: 0;
+  right: 0;
+  max-width: 1000px;
+  margin-left: 25.25%;
+  background: #201f22;
 }
-.inner-main ul li{
-  float: left;
+.main-footer * {
+  padding: 5px;
 }
-.inner-main ul a{
-  color: #858597;
-  display:inline-block;
-  margin-top: 25px;
-}
-.contact-social{
-  margin-top: 50px;
-}
-.contact-social a:hover{
+.main-footer a:hover{
   color: #252525;
+}
+.footer-social{
+  max-width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  color: #f3f3f3;
+}
+.footer-social li a{
+    color: #ffffff;
+}
+.footer-social li a:hover{
+  color: #eced9d;
 }
 #honeypot {
   display: none; /*makes the field not visible to humans*/
@@ -445,6 +467,7 @@ button:focus{
   /*Disable old settings*/
   .sidebar-nav a:before,
   .sidebar-nav a:after{
+    all: unset;
     margin:0;
   }
   .sidebar-nav a{
@@ -548,7 +571,11 @@ button:focus{
     opacity: 1;
     transition: opacity 350ms ease-in-out 250ms;
   }
-
+  .main-footer{
+    position: relative;
+    margin-left:0;
+    width: 100%;
+  }
 
 @media screen and (max-width: 600px){
   p{
