@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <meta charset="utf-8">
+    <meta name="keywords" content="Front-end, Webdesign, webdeveloper, webbutvecklare, responsive design, javascript developer ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonathan S | Web developer</title>
-    <meta name="description" content="My web developer / web designer online portfolio is here! What i do? design and develop clean responsive accessible websites, check it out!">
+    <meta name="description" content="This is my web development / webdesign portfolio is here! What i do? I am Designing and developing clean, responsive & accessible websites, check it out!">
   </head>
   <body>
     <header class="sidebar">
@@ -18,7 +19,7 @@
       </div>
       <div class="sidebar-content flex-columns">
         <div class="sidebar-img">
-          <img style="background: white;" src="portrait.svg" alt="a sketched potrait of me">
+          <img src="media/portrait.svg" alt="a sketched potrait of me">
         </div>
         <div class="sidebar-header">
           <h1>Jonathan Silkewall</h1>
@@ -41,17 +42,26 @@
     </header>
     <div class="container">
       <section class="main-content" id="aboutme-anchor">
+        <div class="internship-flag">
+           <p>currently looking for internship<p>
+              <span class="readmore">read more</span></p>
+              <div class="internship-content" style="width: 60%; margin: auto; padding: 10px 0; max-width: 500px; color:white;">
+                I am looking for internship as a front end developer in the spring and autumn of 2019.
+                For more information contact me with your contact information.
+              </div>
+        </div>
         <div  class="inner-main">
           <div class="aboutme">
             <h2 class="content-header">About me</h2>
             <p class="aboutme-text">
-               <span class="first-word"> Hi!</span> I'm a student at KYH, located in Stockholm,
-                where I study Front-End development. I enjoy to work with everything from visual,
-                 UX / UI to write code for Back-End. Techniques I'm studying includes UX / UI, React,
-                  php, SQL, Node.js and Express as well databases like mySQL & MongoDB.
+              Hi! my name is Jonathan and I am a student at KYH, located in <a class="gmap-links" target="_blank" title="Stockholm in google maps"href="https://goo.gl/maps/BuvtJZgqvvy">Stockholm</a>,
+              where I study Front-End development. I enjoy working with everything from visual,
+              UX / UI to write code for Back-end. The areas I study involves React, php, SQL,
+              Node.js and databases like mySQL & MongoDB.
             </p>
           </div>
           <div class="flex-table">
+            <h3 class="table-header">What i am currently focusing on</h3>
             <div class="row">
               <p>html</p>
               <div class="html-column codebar">
@@ -83,8 +93,7 @@
               </div>
               <div class="card-content">
                   <h3 class="card-header">Landing page</h3>
-                  <p class="card-text">This is a mockup, a landing page for a school project which purpose was to reach out .......</p>
-                  <a href="#">Read more</a>
+                  <p class="card-text">This is a mockup, a landing page for a school project which purpose was to reach out...</p>
               </div>
             </div>
             <div class="card">
@@ -94,8 +103,7 @@
               <div class="card-content">
                   <h3 class="card-header">Simple E-card page for art</h3>
                   <p class="card-text">Mockup for a simple E-card website where you could display your art,
-                     blogs, and contact .......</p>
-                  <a href="#">Read more</a>
+                     blogs, and contact....</p>
               </div>
             </div>
             <div class="card">
@@ -104,8 +112,7 @@
               </div>
               <div class="card-content">
                   <h3 class="card-header">A design of a portfolio</h3>
-                  <p class="card-text">This portfolio includes some slide-in-content, javascript made skillbar .......</p>
-                  <a href="#">Read more</a>
+                  <p class="card-text">This portfolio includes some slide-in-content, javascript made skillbar....</p>
               </div>
             </div>
           </div>
@@ -127,6 +134,8 @@
                 <input type="text" required="required" name="name" placeholder="Name">
                 <input type="email" required="required" name="email" placeholder="Email">
               </div>
+              <div class="loader-init">
+              </div>
               <textarea name="message" required rows="8" cols="49"></textarea>
                 <button type="submit" name="button">send</button>
               </div>
@@ -135,7 +144,7 @@
       </section>
       <footer class="main-footer">
         <ul class="footer-social">
-          <li style="font-size:23.5px;">&copy;</li>
+          <li class="cpy-right">&copy;</li>
           <li><a target="_blank" title="Instagram" href="https://www.instagram.com/hirvo/"><i class="fab fa-instagram"></i></a></li>
           <li><a target="_blank" title="Github" href="https://github.com/hrvCode"><i class="fab fa-github"></i></a></li>
           <li><a target="_blank" title="LinkedIn" href="https://se.linkedin.com/in/jonathan-silkewall-6b157616b"><i class="fab fa-linkedin"></i></a></li>

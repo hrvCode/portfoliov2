@@ -3,6 +3,45 @@ body,html{
   margin:0;
   min-height: 100%;
 }
+.internship-flag{
+  width: 300px;
+  height: 70px;
+  margin:0;
+  padding:0;
+  background: #954f4f;
+  border-bottom-right-radius: 30px;
+  position: relative;
+  left:0px;
+  transition: all 1.2s ease-in-out;
+  align-items: center;
+  z-index: 900;
+}
+.readmore{
+  color: #ffc166;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.internship-content{
+  line-height: 1.7;
+  font-size: 17px;
+}
+.main-content .internship-flag > p{
+  color: #fff;
+  margin:0;
+  padding-right: 20px;
+  padding-top: 5px;
+  text-align: right;
+  font-size: 20px;
+  overflow:visible;
+}
+.internship-flag:hover{
+  border-bottom-right-radius: 150px;
+  transition: all 1.5s ease;
+  width: 100%;
+  max-width: 1000px;
+  height: 200px;
+}
+
 *{
   padding:0;
   margin:0;
@@ -14,6 +53,13 @@ h2{
   font-size: 2em;
   letter-spacing: 2px;
   color: #7b728d;
+}
+.gmap-links{
+	text-decoration: none;
+	color: #5151d2;
+}
+.gmap-links:hover{
+	color: #6f6fb1;
 }
 /* SIDEBAR NAVIGATOR */
 .sidebar{
@@ -45,6 +91,7 @@ h2{
   border-radius: 180px;
   width: 100%;
   height: 100%;
+  background: #ffffff;
 }
 .sidebar-header{
   margin-top: 25px;
@@ -131,7 +178,7 @@ h2{
   right:0;
   bottom: 0;
   z-index: -3;
-  background-image: url("https://images.unsplash.com/photo-1508189860359-777d945909ef?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4ea2286eebd13b55b70d7c4e596e5e3f&auto=format&fit=crop&w=1950&q=80");
+  background-image: url("media/container-bg.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -148,6 +195,7 @@ h2{
   box-shadow: 1px 2px 3px rgba(22,22,22,0.5);
 }
 .main-content h3{
+  text-align: center;
   font-weight: 400;
   font-size: 1.1em;
   color: #009688;
@@ -157,6 +205,17 @@ h2{
 }
 .main-content:nth-child(even){
   background: #f3f3f3;
+}
+.aboutme-text{
+  padding: 20px 0;
+}
+.main-content .table-header{
+  display: inline-block;
+  color: #009688;
+  border-radius: 10px;
+  text-align: left;
+  padding: 0 5px;
+  margin: 10px auto;
 }
 .content-header{
   text-align: center;
@@ -170,24 +229,16 @@ h2{
 }
 div.aboutme{
   max-width: 600px;
-  margin: auto;
-}
-.first-word{
-  color: #00a867;
-  font-size: 1.5em;
-}
-/*SKILL */
-.skillset{
-  width: 60%;
-  height: 50%;
+  padding: 10px 0;
   margin: auto;
 }
 
+/*SKILL */
 .flex-table{
   width: 70%;
   height: 50%;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .row *{
   padding:0;
@@ -195,10 +246,9 @@ div.aboutme{
 }
 .row p{
   margin-left: 5px;
-
 }
 .row .codebar{
-  height: 25px;
+  height: 30px;
   text-align: right;
   border-radius: 5px;
   opacity:0;
@@ -227,8 +277,8 @@ div.aboutme{
   margin-bottom: 50px;
   height: 100%;
   background: #fff;
-  box-shadow: 2px 3px 10px rgba(0,0,0,0.2);
-  border-radius: 15px;
+  box-shadow: 2px 3px 5px rgba(0,0,0,0.2);
+  border-radius: 10px;
 }
 .card-img{
   width: 100%;
@@ -243,8 +293,8 @@ div.aboutme{
   z-index: 3;
   width: 100%;
   height: auto;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .card-content{
   z-index: 2;
@@ -267,22 +317,7 @@ div.aboutme{
   align-content: center;
   justify-content: space-between;
 }
-.card a{
-  display: block;
-  width: 95%;
-  background: #ececec;
-  text-align: center;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  margin: 5px auto;
-  text-decoration: none;
-  color: #3869b3;
-}
-.card a:hover{
-  color: #18619c;
-}
-
-/*Hiding mobile nav*/
+/*Hide mobile nav*/
 .mobile-nav{
   display:none;
 }
@@ -290,7 +325,7 @@ div.aboutme{
   display:none;
 }
 #contact{
-  background-image: url('bg-contact.svg');
+  background-image: url('media/bg-contact.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -342,6 +377,21 @@ button:hover{
 button:focus{
 	background: #52b3ff;
 }
+/*makes the field not visible to humans*/
+#honeypot {
+  display: none;
+}
+/*Thank you message after submit*/
+#thankyou_message{
+  display: block;
+  text-align: center;
+}
+#thankyou_message h2{
+  color: #2196f3;
+  font-size: 1em;
+}
+
+/*Foooter*/
 .main-footer{
   position: relative;
   bottom: 0;
@@ -372,17 +422,32 @@ button:focus{
 .footer-social li a:hover{
   color: #eced9d;
 }
-#honeypot {
-  display: none; /*makes the field not visible to humans*/
+.cpy-right{
+  font-size:23.5px;
 }
-#thankyou_message{
-  display: block;
-  text-align: center;
+/*Loader*/
+.loader-active{
+  position: absolute;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  border: 12px solid #f3f3f3;
+   border-top: 12px solid #3498db;
+  right: 40%;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
 }
-#thankyou_message h2{
-  color: #2196f3;
-  font-size: 1em;
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
 }
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive styles*/
 @media screen and (max-width: 1100px){
   .card{
     width: 45%;
@@ -399,7 +464,7 @@ button:focus{
     width: 100%;
     z-index: -4;
     height: 100%;
-    background-image:url('mbakgrund.jpg');
+    background-image:url('media/mobile-bakground.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -559,7 +624,7 @@ button:focus{
     text-decoration: none;
     color: white;
     font-size: 16px;
-    padding: 15px 25px;
+    padding: 15px 20px;
     width: 100%;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
@@ -571,13 +636,19 @@ button:focus{
     opacity: 1;
     transition: opacity 350ms ease-in-out 250ms;
   }
+  /*Footer for smaller screens*/
   .main-footer{
     position: relative;
+    height: 100px;
     margin-left:0;
     width: 100%;
   }
-
+/*Mobile size*/
 @media screen and (max-width: 600px){
+  .internship-flag:hover, .internship:active{
+    height: 250px;
+    border-bottom-right-radius: 150px;
+  }
   p{
     font-size: 18px;
   }

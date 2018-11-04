@@ -92,9 +92,12 @@
           var thankYouMessage = form.querySelector("#thankyou_message");
           if (thankYouMessage) {
             thankYouMessage.style.display = "block";
+            //removing loading when message sent to screen
+            let loadElement = document.querySelector(".loader-init");
+            loadElement.classList.toggle('loader-active');
           }
           return;
-      };
+        };
       // url encode form data for sending as post data
       var encoded = Object.keys(data).map(function(k) {
           return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
